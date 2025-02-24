@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service</title>
+</head>
+<link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+<script src="https://kit.fontawesome.com/d940d584d4.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="container">
+        <div class="hero_page">
+            <!-- menu -->
+            <div class="menu-fixed">
+                <menu>
+                    <div class="logo"><img src="logo.svg" alt=""></div>
+                    <ol>
+                        <li>Home</li>
+                        <li>about</li>
+                        <li>Services</li>
+                        <li>blog</li>
+                        <li>contact</li>
+                    </ol>
+                    <div class="phone"><i class="fa-solid fa-phone"></i><a href="tel:1-800-915-6271">1-800-915-6271</a></div>
+                </menu>
+            </div>
+             
+
+            <!-- hero content -->
+            
+            <div class="info_icon">
+                <div><i class="fa-solid fa-envelope"></i><a href="mailto:cras.support@cras.com" style="color: white;text-decoration: none;"> cras.support@cras.com</a></div>
+                <div><i class="fa-solid fa-location-dot"></i> 123 Maple Street Toronto, Canada</div>
+                <div><i class="fa-regular fa-calendar-days"></i> Sun - Thu:Open 24/7</div>
+            </div>
+            <div class="hero_content">
+                <h1>car repair & auto service</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
+                <button>Appointment</button>
+            </div>
+        </div>
+        
+        <!-- page-2 -->
+
+        <div class="page_2">
+            <div class="number">
+                <p>01</p>
+                <div><hr></div>
+                <p>02</p>
+                <div><hr></div>
+                <p>03</p>
+                <div><hr></div>
+            </div>
+            <div class="card_div">
+                <div>
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <h5>PERFOMANCE CHECK</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-car-tunnel"></i>
+                    <h5>AUTO REPAIRK</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-car"></i>
+                    <h5>FLEET SERVICES</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- page-3 -->
+         
+        <div class="page_3">
+            <div class="choose">
+                <h1>Why Choose Us</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+                <h2>Certified Technicians</h2>
+                <h2>Comprehensive Repair Services</h2>
+                <h2>900 Five Star Reviews</h2>
+                <h2>Warranty on Repairs</h2>
+                <button>VIEW MORE</button>
+            </div>
+            <div>
+                <img src="Group 109.png" alt="" width="550px">
+            </div>
+        </div>
+
+        <!-- page-4 -->
+
+        <div class="page_4">
+            <div class="service_stick"> 
+                <h1>Dedicated<br>Services</h1>
+                <p>em Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
+                <button>VIEW ALL SERVICES</button>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <div>
+                        <img src="service_1.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1>Performance Upgrades and Customization</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+                        <button>VIEW ALL </button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div>
+                        <img src="service_2.jpg" alt="">
+                    </div>
+                    <div>     
+                        <h1>Engine Diagnostics and Repair</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+                        <button>VIEW ALL </button>
+                    </div>
+                </div>
+                <div class="service">
+                    <div>
+                        <img src="service_3.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1>Tire Services</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+                        <button>VIEW ALL </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- page-5 -->
+
+        <div class="vdo">
+            <a href="https://www.youtube.com/watch?v=1892ujwIooo&list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMiijKJdUDR3c&index=4" target="_blank">
+              <img src="car.png" alt="Your Image Description" height="100%" width="100%">
+            </a>
+              
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+</body>
+
+<script>
+window.addEventListener("scroll", function () {
+    const serviceStick = document.querySelector('.service_stick');
+    const servicesSection = document.querySelector('.services');
+    const headerHeight = document.querySelector('menu').offsetHeight; // Adjust based on your header's height
+
+    // Get the scroll position of the page
+    const scrollPosition = window.scrollY;
+
+    // Get the top position of the .services section
+    const servicesTop = servicesSection.getBoundingClientRect().top + scrollPosition;
+
+    // Get the height of the .services section
+    const servicesHeight = servicesSection.offsetHeight;
+
+    // If the scroll position has passed the bottom of the services section, unpin the .service_stick
+    if (scrollPosition > servicesTop + servicesHeight - serviceStick.offsetHeight) {
+        serviceStick.style.position = "absolute";
+        serviceStick.style.top = `${servicesTop + servicesHeight - serviceStick.offsetHeight}px`;
+    } else {
+        serviceStick.style.position = "sticky";
+        serviceStick.style.top = `${headerHeight}px`; // Keep it below the header
+    }
+});
+
+window.addEventListener("scroll", function () {
+            const serviceStick = document.querySelector('.service_stick');
+            const servicesSection = document.querySelector('.services');
+            const headerHeight = document.querySelector('menu').offsetHeight; // Adjust based on your header's height
+
+            // Get the scroll position of the page
+            const scrollPosition = window.scrollY;
+
+            // Get the top position of the .services section
+            const servicesTop = servicesSection.getBoundingClientRect().top + scrollPosition;
+
+            // Get the height of the .services section
+            const servicesHeight = servicesSection.offsetHeight;
+
+            // If the scroll position has passed the bottom of the services section, unpin the .service_stick
+            if (scrollPosition > servicesTop + servicesHeight - serviceStick.offsetHeight) {
+                serviceStick.style.position = "absolute";
+                serviceStick.style.top = `${servicesTop + servicesHeight - serviceStick.offsetHeight}px`;
+            } else {
+                serviceStick.style.position = "sticky";
+                serviceStick.style.top = `${headerHeight}px`; // Keep it below the header
+            }
+        });
+</script>
+<script>
+    </script>
+</html>

@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #FF3D24;
+    --secondary-color: white;
+    --third-color: #FF3D24;
+}
+
+/* scrolbar */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* hero  page */
+
+.hero_page {
+    background: url("hero_slider_bg_1.png");
+    background-size: cover;
+    height: 100vh;
+    color: var(--secondary-color);
+}
+
+/* header */
+.menu-fixed{
+    position: absolute;    
+    z-index: 76545678;
+}
+
+menu{
+    position: fixed;
+    top: 0;left: 0;width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.075);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    height: 90px;
+}
+
+menu ol {
+    display: flex;
+    gap: 60px;
+    font-family: "Oxanium", sans-serif;
+    font-size: 18px;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.phone i,
+.info_icon i,
+.card_div div i,
+.vdo a i {
+    padding: 16px;
+    font-size: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.info_icon i::after,
+.phone i::after, 
+.card_div div i::after,
+.vdo a i::after{
+    content: '';
+    position:absolute;
+    top: 0;left: 0;
+    background: var(--primary-color);
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    animation: glow 2s infinite ;
+}
+
+@keyframes glow {
+    
+    0%{
+        transform:  scale(1);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+
+.phone a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-family: "Oxanium", sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+/* hero content */
+
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    padding-left: 8%;
+    padding-top: 60px;
+    width: 45%;
+}
+
+.info_icon {
+    padding-top: 150px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.hero_content h1 {
+    font-family: "Oxanium", sans-serif;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.hero_content p,
+.card_div p ,
+.choose p, .page_4 div p{
+    font-size: 18px;
+    color: rgb(212, 212, 212);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero_content button , .choose button{
+    cursor: pointer;
+    padding: 20px 50px;
+    color: var(--secondary-color);
+    font-size: 17px;
+    border: none;
+    text-transform: uppercase;
+    background: var(--primary-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero_content button:hover,.choose button:hover{
+    transform: scale(0.9);
+    background: white;
+    color: black;
+    transition: 0.6s all;
+}
+
+
+/* page-2 */
+
+.page_2 {
+    background: #101010;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.number hr {
+    width: 300px;
+}
+
+.number p {
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-family: "Bungee Outline", sans-serif;
+}
+
+.card_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.card_div div {
+    background: black;
+    width: 350px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.card_div h5 {
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* page-3 */
+
+.page_3 {
+    background: #101010;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose {
+    width: 49%;
+}
+
+.choose h1 , .page_4 div h1, .page_4 div h1{
+    color: white;
+    font-size: 48px;
+    font-family: "Oxanium", sans-serif;
+    text-transform: uppercase;
+}
+
+.choose p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.choose h2{
+    font-family: "Bungee Outline", sans-serif;
+    font-size: 36px;
+    color: rgb(212, 212, 212);
+    padding-top: 20px;
+}
+
+.choose h2:hover{
+    color: var(--primary-color);
+    transition: all 1s;
+}
+
+.choose button{
+    margin-top: 30px;
+}
+
+
+/* page-4 */
+
+.page_4{
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.service_stick {
+    width: 60vw;
+    position: sticky;
+    top: 90px;
+    z-index: 2;
+}
+.service_stick p{
+    padding: 10px 0px 40px 0px;
+}
+
+.services{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    /* animation: down infinite   alternate;  */
+}
+    
+
+/* 
+@keyframes down {
+    0%{
+        transform: translate(-50px);
+    }
+    
+    100%{
+        transform: translate(50px);
+    }
+    
+} */
+
+
+.service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: var(--secondary-color);
+}
+
+
+.service div h1{
+    font-size: 30px;
+}
+
+.service div p{
+    font-size: 15px;
+    padding: 10px 0px 30px 0px;
+}
+
+.service div button,
+.service_stick button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid var(--primary-color);
+    border-top:none ;
+    border-right:none ;
+    border-left:none ;
+    padding: 0 0 10px 0;
+    background: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.service div button:hover,
+.service_stick button:hover{
+    color: var(--primary-color);
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+
+/* page-5 */
+
+
+
+
+
