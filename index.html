@@ -8,7 +8,6 @@
 <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
 <script src="https://kit.fontawesome.com/d940d584d4.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="style.css">
-
 <body>
     <div class="container">
         <div class="hero_page">
@@ -137,9 +136,46 @@
         <div class="vdo">
             <a href="https://www.youtube.com/watch?v=1892ujwIooo&list=RDGMEMHDXYb1_DDSgDsobPsOFxpAVMiijKJdUDR3c&index=4" target="_blank">
               <img src="car.png" alt="Your Image Description" height="100%" width="100%">
-            </a>
-              
+            </a>    
         </div>
+
+        <!-- page-6 -->
+        
+        <div class="page6">
+            <div>
+                <h1>100+</h1>
+                <p>years of service</p>
+            </div>
+            <div>
+                <h1>456+</h1>
+                <p>HAPPY CUSTOMERS</p>
+            </div>
+            <div>
+                <h1>450+</h1>
+                <p>CUSTOMER SATISFACTION</p>
+            </div>
+        </div>
+
+
+        <!-- page-7 -->
+
+        <div class="page_7">
+            <h1>Trusted Client</h1>
+            <div class="carousel" id="carousel" role="region" aria-label="Logo Carousel">
+                <div class="carousel-container" id="carouselContainer" role="list">
+                    <div class="carousel-item" role="listitem"><img src="trusted-client_1.png" alt=""></div>
+                    <div class="carousel-item" role="listitem"><img src="trusted-client_3.png" alt=""></div>
+                    <div class="carousel-item" role="listitem"><img src="trusted-client_4.png" alt=""></div>
+                    <div class="carousel-item" role="listitem"><img src="trusted-client_5.png" alt=""></div>
+                    <div class="carousel-item" role="listitem"><img src="trusted-client_7.png" alt=""></div>
+                    <div class="carousel-item" role="listitem"><img src="trusted-client_1.png" alt=""></div>
+                    <div class="carousel-item" role="listitem"><img src="trusted-client_3.png" alt=""></div>
+                    <div class="carousel-item" role="listitem"><img src="trusted-client_4.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 
 
@@ -152,6 +188,37 @@
 </body>
 
 <script>
+// loop logo
+const carouselContainer = document.getElementById('carouselContainer');
+
+const carouselItems = carouselContainer.innerHTML;
+carouselContainer.innerHTML += carouselItems;
+
+let scrollLeft = 0;
+const scrollSpeed = 4; // Adjust the scroll speed as needed
+
+function animateCarousel(timestamp) {
+    if (!lastTimestamp) {
+        lastTimestamp = timestamp;
+    }
+
+    const deltaTime = timestamp - lastTimestamp;
+    lastTimestamp = timestamp;
+
+    scrollLeft += scrollSpeed * deltaTime / 60; // Normalize speed
+    if (scrollLeft >= carouselContainer.scrollWidth / 2) {
+        scrollLeft = 0;
+    }
+    carouselContainer.style.transform = `translateX(-${scrollLeft}px)`;
+
+    requestAnimationFrame(animateCarousel);
+}
+
+let lastTimestamp = null;
+requestAnimationFrame(animateCarousel);
+
+// div stuck
+
 window.addEventListener("scroll", function () {
     const serviceStick = document.querySelector('.service_stick');
     const servicesSection = document.querySelector('.services');
