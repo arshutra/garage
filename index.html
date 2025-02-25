@@ -204,20 +204,24 @@
         <div class="page_8">
             <div class="testimonial_buttons">
                 <div>
-                    <h2>SEE WHAT OUR SATISFIED CUSTOMER SAYS</h2>
+                    <h2>SEE WHAT OUR SATISFIED <br> CUSTOMER SAYS</h2>
                 </div>
                 <div class="buttons">
-                    <button onclick="prevTestimonial()">PREV</button>
-                    <button onclick="nextTestimonial()">NEXT</button>
+                    <button onclick="prevTestimonial()"><i class="fa-solid fa-arrow-left" id="left"></i> PREV</button>
+                    <button onclick="nextTestimonial()">NEXT <i class="fa-solid fa-arrow-right" id="right"></i></button>
                 </div>
             </div>
             <div class="testimonial-container">
                 <div class="testimonial">
-                    <img id="testimonial-image" src="Group 69 (1).svg" alt="">
-                    <p id="testimonial-text">"There are many variations of passages of Lorem Ipsum available, but the
-                        majority have suffered alteration in some form injected humour, or randomised."</p>
-                    <h3 id="testimonial-name">Roberts Bush</h3>
-                    <p id="testimonial-location">From Canada</p>
+                    <div>
+                        <img id="testimonial-image" src="Group 69 (1).svg" alt=""  width="400px">
+                    </div>
+                    <div>
+                        <h3 id="testimonial-name" style="font-size: 24px; text-align: right; padding-bottom: 3px;">Roberts Bush</h3>
+                        <p id="testimonial-location" style="font-size: 18px; text-align: right; padding-bottom: 6px;">From Canada</p>
+                        <p id="testimonial-text" style="font-size: 28px;font-style: italic; text-align: right;">"There are many variations of passages of Lorem Ipsum available, but the
+                            majority have suffered alteration in some form injected humour, or randomised."</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -243,19 +247,19 @@
             name: "Roberts Bush",
             location: "Canada",
             text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised.",
-            image: "Group69.svg",
+            image: "https://cras-three.vercel.app/cras-main/assets/img/testmaonail_1.png",
         },
         {
             name: "Jane Doe",
             location: "USA",
             text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries but also the leap into electronic typesetting.",
-            image: "images/testimonial2.jpg",
+            image: "https://cras-three.vercel.app/cras-main/assets/img/testimaonial.png",
         },
         {
             name: "John Smith",
             location: "UK",
             text: "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in classical Latin literature from 45 BC, making it over 2000 years old.",
-            image: "images/testimonial3.jpg",
+            image: "https://cras-three.vercel.app/cras-main/assets/img/testmaonail_1.png",
         }
     ];
 
@@ -357,8 +361,27 @@
             serviceStick.style.top = `${headerHeight}px`; // Keep it below the header
         }
     });
+
+
+// bg 
+
+    const bgImages = [
+        "hero_slider_bg_1.png",
+        "hero_slider_bg_2.png",
+    ];
+
+    let bgIndex = 0;
+    const heroPage = document.querySelector(".hero_page");
+
+    function changeBackground() {
+        heroPage.style.backgroundImage = `url(${bgImages[bgIndex]})`;
+        bgIndex = (bgIndex + 1) % bgImages.length;
+    }
+
+    setInterval(changeBackground, 3000); // Change background every 4 seconds
+    changeBackground(); // Initialize first image
+
 </script>
-<script>
-</script>
+
 
 </html>

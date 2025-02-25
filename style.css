@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 * {
     margin: 0;
@@ -27,6 +27,9 @@
     background-size: cover;
     height: 100vh;
     color: var(--secondary-color);
+    transition: background-image 1s ease-in-out;
+    background-position: center;
+
 }
 
 /* header */
@@ -130,9 +133,9 @@ menu ol {
 }
 
 .hero_content h1 {
-    font-family: "Sarabun", serif;
-    font-size: 60px;
-    font-weight: 800;
+    font-family: "Oxanium", serif;
+    font-size: 55px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -217,8 +220,7 @@ menu ol {
     font-size: 20px;
     padding: 20px;
     font-weight: 700;
-    font-family: "Sarabun", serif;
-}
+    font-family: "Oxanium", serif;}
 
 
 /* page-3 */
@@ -235,10 +237,10 @@ menu ol {
     width: 49%;
 }
 
-.choose h1 , .page_4 div h1, .page_4 div h1{
+.choose h1 , .page_4 div h1, .page_4 div h1,.page_8 h1{
     color: white;
-    font-size: 48px;
-    font-family: "Sarabun", serif;
+    font-size: 49px;
+    font-family: "Oxanium", serif;
     text-transform: uppercase;
 }
 
@@ -357,8 +359,7 @@ menu ol {
 }
 
 .page6 div p{
-    font-family: "Sarabun", serif;
-    font-size: 22px;
+    font-family: "Oxanium", serif;    font-size: 22px;
     text-transform: uppercase;
     padding: 10px;
     font-weight: 600;
@@ -370,8 +371,7 @@ menu ol {
 
 .page_7 {
     padding: 50px;
-    font-family: "Sarabun", serif;
-    font-size: 20px;
+    font-family: "Oxanium", serif;    font-size: 20px;
     color: var(--secondary-color);
     text-align: center;
     background: #101010;
@@ -410,33 +410,49 @@ menu ol {
 
 .testimonial_buttons{
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--secondary-color);
+    font-family: "Oxanium", serif;
+        font-size: 30px;
+    padding-bottom: 40px;
 }
 
 .buttons button {
-    padding: 30px 20px;
-    margin: 5px;
-    border: none;
+    padding: 15px 25px;
+    margin: 15px;
+    border: 1px solid var(--secondary-color);
     cursor: pointer;
-    background-color: #555;
     color: white;
-    border-radius: 5px;
+    background: none;
+    border-radius: 2px;
 }
-.buttons button:hover {
-    background-color: #777;
+.buttons button:hover  {
+    background-color: #FF3D24;
+    border: none;
+}
+.buttons button:hover #left {
+    transform: translate(-7px);
+}
+.buttons button:hover #right {
+    transform: translate(7px);
+}
+
+.testimonial{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .testimonial-container {
-    max-width: 600px;
+    width: 73vw;
     margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #222;
+    padding: 40px;
+    background-color: #000;
+    color: var(--secondary-color);
+    font-family: "Sarabun", serif;
 }
-.testimonial img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 10px 0;
-}
+
+/* media querry for testoimonials */
 
 @media (max-width: 480px) {
     .testimonial img {
