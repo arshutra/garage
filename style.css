@@ -414,8 +414,39 @@ menu ol {
     justify-content: space-around;
     color: var(--secondary-color);
     font-family: "Oxanium", serif;
-        font-size: 30px;
+    font-size: 30px;
     padding-bottom: 40px;
+    position: relative;
+}
+
+.tubelight{
+    position: absolute;
+    top: 0;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.16);
+    animation: tubelight 4.5s infinite alternate;
+
+}
+
+/* tubleight effect */
+
+@keyframes tubelight {
+    0% {
+        opacity: 0.4;
+        text-shadow: 1px rgba(255, 255, 255, 0.16) 1px;
+    }
+    
+    40% {
+        text-shadow: 1px rgba(255, 255, 255, 0.251) 1px;
+        opacity: 0.9;
+    }
+   
+   
+    100% {
+        text-shadow: rgba(255, 255, 255, 0.16);
+        opacity: 0.4;
+    }
 }
 
 .buttons button {
