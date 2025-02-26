@@ -147,7 +147,8 @@ menu ol {
 .choose p,
 .page_4 div p,
 .page_9 div p,
-.page_10 p {
+.page_10 p,
+.price div h6 {
     font-size: 18px;
     color: rgb(212, 212, 212);
     font-family: "Sarabun", serif;
@@ -252,7 +253,8 @@ menu ol {
 .page_4 div h1,
 .page_8 h1,
 .page_9 div h1,
-.page_10 h1 {
+.page_10 h1,
+.price div h5 {
     color: white;
     font-size: 49px;
     font-family: "Oxanium", serif;
@@ -536,12 +538,14 @@ menu ol {
     justify-content: center;
     color: var(--secondary-color);
     gap: 30px;
-    padding: 50px;
+    padding: 50px 50px 150px;
+    position: relative;
 }
 
 .page_9 div {
     width: 300px;
 }
+
 
 .team_card {
     position: relative;
@@ -571,7 +575,7 @@ menu ol {
     font-size: 24px;
     font-family: "Sarabun", serif;
     padding-top: 14px;
-    
+
 }
 
 .team-icons {
@@ -591,23 +595,72 @@ menu ol {
     transition: 0.3s ease-in-out;
 }
 
-.team-icons a:hover{
+.team-icons a:hover {
     background: var(--third-color);
 }
 
 /* page_10 */
 
-.page_10{
-    background: rgb(16,16,16);
-background: linear-gradient(110deg, rgba(16,16,16,1) 0%, rgba(35,15,21,1) 5%, rgba(61,23,28,1) 99%, rgba(171,45,31,1) 100%);
-    padding: 200px 50px 50px 50px;
+.page_10 {
+    background: rgb(16, 16, 16);
+    background: linear-gradient(96deg, rgba(16, 16, 16, 1) 6%, rgba(35, 15, 21, 1) 39%, rgba(61, 23, 28, 1) 99%, rgba(171, 45, 31, 1) 100%);
+    padding: 100px 50px 50px 50px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    position: relative;
+    /* overflow: hidden; */
 }
 
-.page_10 p{
+
+.page_10 p {
     width: 600px;
 }
+
+.price {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.price div {
+    border: 1px solid var(--secondary-color);
+    width: 400px;padding: 60px;
+}
+
+.price div h6{
+    padding: 8px;
+    font-weight: 300;
+}
+.price div h5{
+    padding: 8px;
+}
+.price div h3 {
+    padding: 10px 5px 50px 5px;
+    color: white;
+    font-size: 22px;
+    text-decoration: line-through;
+    font-family: "Oxanium", serif;
+}
+
+.price button{
+    font-family: "Oxanium", serif;
+    font-size: 17px;
+    color: var(--secondary-color);
+    background: rgba(255, 255, 255, 0.215);margin-top: 20px;
+    padding: 20px 35px;
+    border-radius: 40px;
+    border: none;
+}
+
+.price div i{
+    color: rgba(255, 255, 255, 0.596);padding-right: 6px;
+}
+
+.price button:hover{
+    background: var(--third-color);
+}
+
