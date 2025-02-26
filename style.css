@@ -33,14 +33,16 @@
 }
 
 /* header */
-.menu-fixed{
-    position: absolute;    
+.menu-fixed {
+    position: absolute;
     z-index: 76545678;
 }
 
-menu{
+menu {
     position: fixed;
-    top: 0;left: 0;width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -73,27 +75,28 @@ menu ol {
 }
 
 .info_icon i::after,
-.phone i::after, 
+.phone i::after,
 .card_div div i::after,
-.vdo a i::after{
+.vdo a i::after {
     content: '';
-    position:absolute;
-    top: 0;left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
     background: var(--primary-color);
     border-radius: 50%;
     height: 100%;
     width: 100%;
     z-index: -1;
-    animation: glow 2s infinite ;
+    animation: glow 2s infinite;
 }
 
 @keyframes glow {
-    
-    0%{
-        transform:  scale(1);
+
+    0% {
+        transform: scale(1);
         opacity: 1;
     }
-    
+
     100% {
         transform: scale(1.5);
         opacity: 0;
@@ -140,14 +143,18 @@ menu ol {
 }
 
 .hero_content p,
-.card_div p ,
-.choose p, .page_4 div p{
+.card_div p,
+.choose p,
+.page_4 div p,
+.page_9 div p,
+.page_10 p {
     font-size: 18px;
     color: rgb(212, 212, 212);
     font-family: "Sarabun", serif;
 }
 
-.hero_content button , .choose button{
+.hero_content button,
+.choose button {
     cursor: pointer;
     padding: 20px 50px;
     color: var(--secondary-color);
@@ -158,7 +165,8 @@ menu ol {
     font-family: "Sarabun", serif;
 }
 
-.hero_content button:hover,.choose button:hover{
+.hero_content button:hover,
+.choose button:hover {
     transform: scale(0.9);
     background: white;
     color: black;
@@ -220,7 +228,8 @@ menu ol {
     font-size: 20px;
     padding: 20px;
     font-weight: 700;
-    font-family: "Oxanium", serif;}
+    font-family: "Oxanium", serif;
+}
 
 
 /* page-3 */
@@ -235,40 +244,47 @@ menu ol {
 
 .choose {
     width: 49%;
+    position: relative;
 }
 
-.choose h1 , .page_4 div h1, .page_4 div h1,.page_8 h1{
+.choose h1,
+.page_4 div h1,
+.page_4 div h1,
+.page_8 h1,
+.page_9 div h1,
+.page_10 h1 {
     color: white;
     font-size: 49px;
     font-family: "Oxanium", serif;
     text-transform: uppercase;
 }
 
-.choose p{
+
+.choose p {
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-.choose h2{
+.choose h2 {
     font-family: "Bungee Outline", sans-serif;
     font-size: 36px;
     color: rgb(212, 212, 212);
     padding-top: 20px;
 }
 
-.choose h2:hover{
+.choose h2:hover {
     color: var(--primary-color);
     transition: all 1s;
 }
 
-.choose button{
+.choose button {
     margin-top: 30px;
 }
 
 
 /* page-4 */
 
-.page_4{
+.page_4 {
     background: #101010;
     display: flex;
     align-items: center;
@@ -282,11 +298,12 @@ menu ol {
     top: 90px;
     z-index: 2;
 }
-.service_stick p{
+
+.service_stick p {
     padding: 10px 0px 40px 0px;
 }
 
-.services{
+.services {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,11 +311,11 @@ menu ol {
     gap: 30px;
     /* animation: down infinite   alternate;  */
 }
-    
 
 
 
-.service{
+
+.service {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -307,22 +324,23 @@ menu ol {
 }
 
 
-.service div h1{
+.service div h1 {
     font-size: 30px;
 }
 
-.service div p{
+.service div p {
     font-size: 15px;
     padding: 10px 0px 30px 0px;
 }
 
 .service div button,
-.service_stick button{
+.service_stick button,
+.page_9 div button {
     font-family: "Sarabun", serif;
     border: 2px solid var(--primary-color);
-    border-top:none ;
-    border-right:none ;
-    border-left:none ;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     padding: 0 0 10px 0;
     background: none;
     color: aliceblue;
@@ -332,7 +350,8 @@ menu ol {
 
 
 .service div button:hover,
-.service_stick button:hover{
+.service_stick button:hover,
+.page_9 div button:hover {
     color: var(--primary-color);
     transition: all 0.5s ease-out;
     cursor: pointer;
@@ -342,7 +361,7 @@ menu ol {
 
 /* page-6 */
 
-.page6{
+.page6 {
     background: #101010;
     padding: 140px;
     display: flex;
@@ -351,15 +370,16 @@ menu ol {
     gap: 100px;
 }
 
-.page6 div h1{
+.page6 div h1 {
     font-family: "Bungee Outline", sans-serif;
     color: var(--third-color);
     font-size: 56px;
     text-align: center;
 }
 
-.page6 div p{
-    font-family: "Oxanium", serif;    font-size: 22px;
+.page6 div p {
+    font-family: "Oxanium", serif;
+    font-size: 22px;
     text-transform: uppercase;
     padding: 10px;
     font-weight: 600;
@@ -371,7 +391,8 @@ menu ol {
 
 .page_7 {
     padding: 50px;
-    font-family: "Oxanium", serif;    font-size: 20px;
+    font-family: "Oxanium", serif;
+    font-size: 20px;
     color: var(--secondary-color);
     text-align: center;
     background: #101010;
@@ -403,12 +424,12 @@ menu ol {
 
 /* page-8 */
 
-.page_8{
+.page_8 {
     background: #101010;
     padding: 50px;
 }
 
-.testimonial_buttons{
+.testimonial_buttons {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -419,14 +440,14 @@ menu ol {
     position: relative;
 }
 
-.tubelight{
+.tubelight {
     position: absolute;
-    top: 0;
+    top: 0px;
     font-size: 90px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.16);
-    animation: tubelight 4.5s infinite alternate;
-
+    color: rgba(255, 255, 255, 0.226);
+    font-family: "Oxanium", serif;
+    animation: tubelight 3.5s infinite alternate;
 }
 
 /* tubleight effect */
@@ -434,18 +455,18 @@ menu ol {
 @keyframes tubelight {
     0% {
         opacity: 0.4;
-        text-shadow: 1px rgba(255, 255, 255, 0.16) 1px;
+        text-shadow: 1px rgba(255, 255, 255, 0.336) 1px;
     }
-    
+
     40% {
         text-shadow: 1px rgba(255, 255, 255, 0.251) 1px;
         opacity: 0.9;
     }
-   
-   
+
+
     100% {
-        text-shadow: rgba(255, 255, 255, 0.16);
-        opacity: 0.4;
+        text-shadow: rgba(255, 255, 255, 0.336);
+        opacity: 0.5;
     }
 }
 
@@ -458,22 +479,26 @@ menu ol {
     background: none;
     border-radius: 2px;
 }
-.buttons button:hover  {
+
+.buttons button:hover {
     background-color: #FF3D24;
     border: none;
 }
+
 .buttons button:hover #left {
     transform: translate(-7px);
 }
+
 .buttons button:hover #right {
     transform: translate(7px);
 }
 
-.testimonial{
+.testimonial {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
+
 .testimonial-container {
     width: 73vw;
     margin: auto;
@@ -490,11 +515,99 @@ menu ol {
         width: 60px;
         height: 60px;
     }
+
     .testimonial p {
         font-size: 0.9rem;
     }
+
     .buttons button {
         padding: 8px 16px;
         font-size: 0.9rem;
     }
+}
+
+
+/* page_9 */
+
+.page_9 {
+    background: #101010;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    gap: 30px;
+    padding: 50px;
+}
+
+.page_9 div {
+    width: 300px;
+}
+
+.team_card {
+    position: relative;
+}
+
+.team_info {
+    position: absolute;
+    top: 80%;
+    padding: 15px;
+    left: 10%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.name {
+    font-size: 28px;
+    font-family: "Oxanium", serif;
+    font-weight: 600;
+
+}
+
+.role {
+    font-size: 24px;
+    font-family: "Sarabun", serif;
+    padding-top: 14px;
+    
+}
+
+.team-icons {
+    display: none;
+    padding-top: 15px;
+}
+
+
+
+.team-icons a {
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: 1px solid var(--secondary-color);
+    padding: 9px;
+    border-radius: 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.team-icons a:hover{
+    background: var(--third-color);
+}
+
+/* page_10 */
+
+.page_10{
+    background: rgb(16,16,16);
+background: linear-gradient(110deg, rgba(16,16,16,1) 0%, rgba(35,15,21,1) 5%, rgba(61,23,28,1) 99%, rgba(171,45,31,1) 100%);
+    padding: 200px 50px 50px 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.page_10 p{
+    width: 600px;
 }

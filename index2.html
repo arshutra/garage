@@ -3,614 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Service</title>
+    <title>Mechanic Profiles</title>
+    <script src="https://kit.fontawesome.com/YOUR_FONT_AWESOME_KEY.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .team-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 250px;
+            background-color: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            background-color: black;
+            position: relative;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            opacity: 0.8;
+            transition: 0.3s ease;
+        }
+
+        /* Initially hide social icons */
+        .social-icons {
+            display: none;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+            color: white;
+            background-color: #333;
+            padding: 8px;
+            border-radius: 5px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .social-icons a:hover {
+            background-color: #ff4500;
+        }
+
+        /* Show social icons when hovering over the card content */
+        .card-content:hover .social-icons {
+            display: flex;
+        }
+    </style>
 </head>
-<link rel="shortcut icon" href="logo.svg" type="image/x-icon">
-<script src="https://kit.fontawesome.com/d940d584d4.js" crossorigin="anonymous"></script>
-
 <body>
-    <div class="container">
-        <div class="hero_page">
-            <!-- menu -->
-            <div class="menu-fixed">
-                <menu>
-                    <div class="logo"><img src="logo.svg" alt=""></div>
-                    <ol>
-                        <li>Home</li>
-                        <li>about</li>
-                        <li>Services</li>
-                        <li>blog</li>
-                        <li>contact</li>
-                    </ol>
-                    <div class="phone"><i class="fa-solid fa-phone"></i><a href="tel:1-800-915-6271">1-800-915-6271</a></div>
-                </menu>
-            </div>
-             
 
-            <!-- hero content -->
-            
-            <div class="info_icon">
-                <div><i class="fa-solid fa-envelope"></i><a href="mailto:cras.support@cras.com" style="color: white;text-decoration: none;"> cras.support@cras.com</a></div>
-                <div><i class="fa-solid fa-location-dot"></i> 123 Maple Street Toronto, Canada</div>
-                <div><i class="fa-regular fa-calendar-days"></i> Sun - Thu:Open 24/7</div>
-            </div>
-            <div class="hero_content">
-                <h1>car repair & auto service</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan</p>
-                <button>Appointment</button>
-            </div>
-        </div>
-        
-        <!-- page-2 -->
-
-        <div class="page_2">
-            <div class="number">
-                <p>01</p>
-                <div><hr></div>
-                <p>02</p>
-                <div><hr></div>
-                <p>03</p>
-                <div><hr></div>
-            </div>
-            <div class="card_div">
-                <div>
-                    <i class="fa-solid fa-gauge-high"></i>
-                    <h5>PERFOMANCE CHECK</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-car-tunnel"></i>
-                    <h5>AUTO REPAIRK</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-car"></i>
-                    <h5>FLEET SERVICES</h5>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
+    <div class="team-container">
+        <!-- Mechanic 1 -->
+        <div class="card">
+            <img src="mechanic1.jpg" alt="Michael Jack">
+            <div class="card-content">
+                <h3>Michael Jack</h3>
+                <p>Lead Mechanic</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fas fa-times"></i></a>
                 </div>
             </div>
         </div>
 
-        <!-- page-3 -->
-         
-        <div class="page_3">
-            <div class="choose">
-                <h1>Why Choose Us</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
-                <h2>Certified Technicians</h2>
-                <h2>Comprehensive Repair Services</h2>
-                <h2>900 Five Star Reviews</h2>
-                <h2>Warranty on Repairs</h2>
-                <button>VIEW MORE</button>
-            </div>
-            <div>
-                <img src="Group 109.png" alt="" width="550px">
+        <!-- Mechanic 2 -->
+        <div class="card">
+            <img src="mechanic2.jpg" alt="Cathy Sparkman">
+            <div class="card-content">
+                <h3>Cathy Sparkman</h3>
+                <p>Main Mechanic</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fas fa-times"></i></a>
+                </div>
             </div>
         </div>
 
-        <!-- page-4 -->
-
-        <div class="page_4">
-            <div class="service_stick"> 
-                <h1>Dedicated<br>Services</h1>
-                <p>em Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum.</p>
-                <button>VIEW ALL SERVICES</button>
-            </div>
-            <div class="services">
-                <div class="service">
-                    <div>
-                        <img src="service_1.jpg" alt="">
-                    </div>
-                    <div>
-                        <h1>Performance Upgrades and Customization</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
-                        <button>VIEW ALL </button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div>
-                        <img src="service_2.jpg" alt="">
-                    </div>
-                    <div>     
-                        <h1>Engine Diagnostics and Repair</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
-                        <button>VIEW ALL </button>
-                    </div>
-                </div>
-                <div class="service">
-                    <div>
-                        <img src="service_3.jpg" alt="">
-                    </div>
-                    <div>
-                        <h1>Tire Services</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan.</p>
-                        <button>VIEW ALL </button>
-                    </div>
+        <!-- Mechanic 3 -->
+        <div class="card">
+            <img src="mechanic3.jpg" alt="Tyra Crawford">
+            <div class="card-content">
+                <h3>Tyra Crawford</h3>
+                <p>Mechanic</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fas fa-times"></i></a>
                 </div>
             </div>
-            <!-- project-1 -->
-
         </div>
     </div>
 
-
-
-
-
-
-
-    
 </body>
-
-<script>
-window.addEventListener("scroll", function () {
-    const serviceStick = document.querySelector('.service_stick');
-    const servicesSection = document.querySelector('.services');
-    const headerHeight = document.querySelector('menu').offsetHeight; // Adjust based on your header's height
-
-    // Get the scroll position of the page
-    const scrollPosition = window.scrollY;
-
-    // Get the top position of the .services section
-    const servicesTop = servicesSection.getBoundingClientRect().top + scrollPosition;
-
-    // Get the height of the .services section
-    const servicesHeight = servicesSection.offsetHeight;
-
-    // If the scroll position has passed the bottom of the services section, unpin the .service_stick
-    if (scrollPosition > servicesTop + servicesHeight - serviceStick.offsetHeight) {
-        serviceStick.style.position = "absolute";
-        serviceStick.style.top = `${servicesTop + servicesHeight - serviceStick.offsetHeight}px`;
-    } else {
-        serviceStick.style.position = "sticky";
-        serviceStick.style.top = `${headerHeight}px`; // Keep it below the header
-    }
-});
-
-window.addEventListener("scroll", function () {
-            const serviceStick = document.querySelector('.service_stick');
-            const servicesSection = document.querySelector('.services');
-            const headerHeight = document.querySelector('menu').offsetHeight; // Adjust based on your header's height
-
-            // Get the scroll position of the page
-            const scrollPosition = window.scrollY;
-
-            // Get the top position of the .services section
-            const servicesTop = servicesSection.getBoundingClientRect().top + scrollPosition;
-
-            // Get the height of the .services section
-            const servicesHeight = servicesSection.offsetHeight;
-
-            // If the scroll position has passed the bottom of the services section, unpin the .service_stick
-            if (scrollPosition > servicesTop + servicesHeight - serviceStick.offsetHeight) {
-                serviceStick.style.position = "absolute";
-                serviceStick.style.top = `${servicesTop + servicesHeight - serviceStick.offsetHeight}px`;
-            } else {
-                serviceStick.style.position = "sticky";
-                serviceStick.style.top = `${headerHeight}px`; // Keep it below the header
-            }
-        });
-</script>
-<style>
- @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --primary-color: #FF3D24;
-    --secondary-color: white;
-    --third-color: #FF3D24;
-}
-
-/* scrolbar */
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-/* hero  page */
-
-.hero_page {
-    background: url("hero_slider_bg_1.png");
-    background-size: cover;
-    height: 100vh;
-    color: var(--secondary-color);
-}
-
-/* header */
-.menu-fixed{
-    position: absolute;    
-    z-index: 76545678;
-}
-
-menu{
-    position: fixed;
-    top: 0;left: 0;width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: rgba(255, 255, 255, 0.075);
-    backdrop-filter: blur(9px);
-    -webkit-backdrop-filter: blur(9px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    height: 90px;
-}
-
-menu ol {
-    display: flex;
-    gap: 60px;
-    font-family: "Oxanium", sans-serif;
-    font-size: 18px;
-    list-style: none;
-    text-transform: uppercase;
-}
-
-.phone i,
-.info_icon i,
-.card_div div i {
-    padding: 16px;
-    font-size: 20px;
-    background: var(--primary-color);
-    border-radius: 50%;
-    position: relative;
-    z-index: 1;
-}
-
-.info_icon i::after,
-.phone i::after, .card_div div i::after{
-    content: '';
-    position:absolute;
-    top: 0;left: 0;
-    background: var(--primary-color);
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    animation: glow 2s infinite ;
-}
-
-@keyframes glow {
-    
-    0%{
-        transform:  scale(1);
-        opacity: 1;
-    }
-    
-    100% {
-        transform: scale(1.5);
-        opacity: 0;
-    }
-}
-
-
-
-.phone a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-family: "Oxanium", sans-serif;
-    font-size: 18px;
-    padding-left: 10px;
-}
-
-/* hero content */
-
-.hero_content {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 30px;
-    padding-left: 8%;
-    padding-top: 60px;
-    width: 45%;
-}
-
-.info_icon {
-    padding-top: 150px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 20px;
-}
-
-.hero_content h1 {
-    font-family: "Oxanium", sans-serif;
-    font-size: 60px;
-    text-transform: uppercase;
-}
-
-.hero_content p,
-.card_div p ,
-.choose p, .page_4 div p{
-    font-size: 18px;
-    color: rgb(212, 212, 212);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.hero_content button , .choose button{
-    cursor: pointer;
-    padding: 20px 50px;
-    color: var(--secondary-color);
-    font-size: 17px;
-    border: none;
-    text-transform: uppercase;
-    background: var(--primary-color);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.hero_content button:hover,.choose button:hover{
-    transform: scale(0.9);
-    background: white;
-    color: black;
-    transition: 0.6s all;
-}
-
-
-/* page-2 */
-
-.page_2 {
-    background: #101010;
-    height: 650px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.number {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
-.number hr {
-    width: 300px;
-}
-
-.number p {
-    color: var(--secondary-color);
-    font-size: 30px;
-    font-family: "Bungee Outline", sans-serif;
-}
-
-.card_div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    padding-top: 20px;
-}
-
-.card_div div {
-    background: black;
-    width: 350px;
-    height: 230px;
-    display: flex;
-    flex-direction: column;
-    color: var(--secondary-color);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 30px;
-}
-
-
-.card_div h5 {
-    font-size: 20px;
-    padding: 20px;
-    font-weight: 700;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-
-/* page-3 */
-
-.page_3 {
-    background: #101010;
-    color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.choose {
-    width: 49%;
-}
-
-.choose h1 , .page_4 div h1, .page_4 div h1{
-    color: white;
-    font-size: 48px;
-    font-family: "Oxanium", sans-serif;
-    text-transform: uppercase;
-}
-
-.choose p{
-    padding-top: 20px;
-    padding-bottom: 30px;
-}
-
-.choose h2{
-    font-family: "Bungee Outline", sans-serif;
-    font-size: 36px;
-    color: rgb(212, 212, 212);
-    padding-top: 20px;
-}
-
-.choose h2:hover{
-    color: var(--primary-color);
-    transition: all 1s;
-}
-
-.choose button{
-    margin-top: 30px;
-}
-
-
-/* page-4 */
-
-.page_4{
-    background: #101010;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px;
-}
-
-.service_stick {
-    width: 60vw;
-    position: sticky;
-    top: 90px;
-    z-index: 2;
-}
-.service_stick p{
-    padding: 10px 0px 40px 0px;
-}
-
-.services{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    /* animation: down infinite   alternate;  */
-}
-    
-
-/* 
-@keyframes down {
-    0%{
-        transform: translate(-50px);
-    }
-    
-    100%{
-        transform: translate(50px);
-    }
-    
-} */
-
-
-.service{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    color: var(--secondary-color);
-}
-
-
-.service div h1{
-    font-size: 30px;
-}
-
-.service div p{
-    font-size: 15px;
-    padding: 10px 0px 30px 0px;
-}
-
-.service div button,
-.service_stick button{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: 2px solid var(--primary-color);
-    border-top:none ;
-    border-right:none ;
-    border-left:none ;
-    padding: 0 0 10px 0;
-    background: none;
-    color: aliceblue;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-
-.service div button:hover,
-.service_stick button:hover{
-    color: var(--primary-color);
-    transition: all 0.5s ease-out;
-    cursor: pointer;
-    letter-spacing: 2px;
-}
-
-/* Media Queries for Responsiveness */
-@media only screen and (max-width: 1200px) {
-    .hero_content {
-        width: 80%;
-        padding-left: 5%;
-    }
-    .card_div div {
-        width: 300px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    menu ol {
-        display: none;  /* Hide menu items on smaller screens */
-    }
-
-    .menu-fixed {
-        display: block;
-    }
-
-    .hero_content {
-        width: 90%;
-        text-align: center;
-    }
-
-    .card_div {
-        flex-direction: column;
-    }
-
-    .card_div div {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .choose h1 {
-        font-size: 2rem;
-    }
-
-    .services {
-        flex-direction: column;
-    }
-
-    .service {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .page_4 {
-        padding: 20px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .hero_content h1 {
-        font-size: 2rem;
-    }
-
-    .hero_content p {
-        font-size: 1rem;
-    }
-
-    .hero_content button {
-        padding: 12px 30px;
-        font-size: 1rem;
-    }
-
-    .choose h2 {
-        font-size: 1.2rem;
-    }
-
-    .service h1 {
-        font-size: 1.2rem;
-    }
-}
-
-</style>
 </html>

@@ -91,6 +91,7 @@
         <div class="page_3">
             <div class="choose">
                 <h1>Why Choose Us</h1>
+                <h4 class="tubelight">THE FEATURE</h4>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     Ipsum has been the industry's stan.</p>
@@ -110,6 +111,7 @@
         <div class="page_4">
             <div class="service_stick">
                 <h1>Dedicated<br>Services</h1>
+                <h1 class="tubelight" style="font-size: 90px; color: rgba(255, 255, 255, 0.226);">services</h1>
                 <p>em Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                     Ipsum.</p>
@@ -215,31 +217,107 @@
             <div class="testimonial-container">
                 <div class="testimonial">
                     <div>
-                        <img id="testimonial-image" src="Group 69 (1).svg" alt=""  width="400px">
+                        <img id="testimonial-image" src="Group 69 (1).svg" alt="" width="400px">
                     </div>
                     <div>
-                        <h3 id="testimonial-name" style="font-size: 24px; text-align: right; padding-bottom: 3px;">Roberts Bush</h3>
-                        <p id="testimonial-location" style="font-size: 18px; text-align: right; padding-bottom: 6px;">From Canada</p>
-                        <p id="testimonial-text" style="font-size: 28px;font-style: italic; text-align: right;">"There are many variations of passages of Lorem Ipsum available, but the
+                        <h3 id="testimonial-name" style="font-size: 24px; text-align: right; padding-bottom: 3px;">
+                            Roberts Bush</h3>
+                        <p id="testimonial-location" style="font-size: 18px; text-align: right; padding-bottom: 6px;">
+                            From Canada</p>
+                        <p id="testimonial-text" style="font-size: 28px;font-style: italic; text-align: right;">"There
+                            are many variations of passages of Lorem Ipsum available, but the
                             majority have suffered alteration in some form injected humour, or randomised."</p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- page-9 -->
+
+        <div class="page_9">
+            <div>
+                <H1>OUR TEAM</H1>
+                <P style="padding: 10px 0px 30px 0px; font: 15px;;">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the
+                    industry's stan.</P>
+                <button>VIEW ALL SERVICES</button>
+            </div>
+            <div class="team_card">
+                <div class="team_img">
+                    <img src="team_1.jpg" alt="">
+                </div>
+                <div class="team_info" style="width: 220px; height: 100px;">
+                    <p class="name">Michael Jack</p>
+                    <p class="role">Founder CEO</p>
+                    <div class="team-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_card">
+                <div class="team_img">
+                    <img src="team_3.jpg" alt="">
+                </div>
+                <div class="team_info" style="width: 220px; height: 100px;">
+                    <p class="name">Cathy Sparkman</p>
+                    <p class="role">Mechanic </p>
+                    <div class="team-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="team_card">
+                <div class="team_img">
+                    <img src="team_2.jpg" alt="">
+                </div>
+                <div class="team_info" style="width: 220px; height: 100px;">
+                    <p class="name">Robin Hood </p>
+                    <p class="role">Main Mechanic</p>
+                    <div class="team-icons">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- page-10 -->
+
+        <div class="page_10">
+            <h1>PRICING</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+        </div>
 
     </div>
-
-
-
-
-
-
 
 
 </body>
 
 <script>
+
+    document.querySelectorAll('.team_info').forEach(info => {
+        const role = info.querySelector('.role');
+        const icons = info.querySelector('.team-icons');
+
+        info.addEventListener('mouseenter', () => {
+            role.style.display = 'none';  // Hide role
+            icons.style.cssText = 'display: flex;padding-left:100px; transition:  1.3s ease-in-out;';
+        });
+
+        info.addEventListener('mouseleave', () => {
+            role.style.display = 'block'; // Show role again
+            icons.style.display = 'none'; // Hide icons
+        });
+    });
+
+
+
 
     // testimonials
 
@@ -263,6 +341,9 @@
             image: "https://cras-three.vercel.app/cras-main/assets/img/testmaonail_1.png",
         }
     ];
+
+
+
 
     let index = 0;
 
@@ -364,7 +445,7 @@
     });
 
 
-// bg 
+    // bg 
 
     const bgImages = [
         "hero_slider_bg_1.png",
