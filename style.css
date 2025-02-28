@@ -148,7 +148,8 @@ menu ol {
 .page_4 div p,
 .page_9 div p,
 .page_10 p,
-.price div h6 {
+.price div h6,
+.page_11 p {
     font-size: 18px;
     color: rgb(212, 212, 212);
     font-family: "Sarabun", serif;
@@ -207,6 +208,7 @@ menu ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     padding-top: 20px;
 }
@@ -241,6 +243,7 @@ menu ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .choose {
@@ -254,7 +257,8 @@ menu ol {
 .page_8 h1,
 .page_9 div h1,
 .page_10 h1,
-.price div h5 {
+.price div h5,
+.page_11 h1 {
     color: white;
     font-size: 49px;
     font-family: "Oxanium", serif;
@@ -337,7 +341,8 @@ menu ol {
 
 .service div button,
 .service_stick button,
-.page_9 div button {
+.page_9 div button,
+.blog div button {
     font-family: "Sarabun", serif;
     border: 2px solid var(--primary-color);
     border-top: none;
@@ -353,7 +358,8 @@ menu ol {
 
 .service div button:hover,
 .service_stick button:hover,
-.page_9 div button:hover {
+.page_9 div button:hover,
+.blog div button:hover {
     color: var(--primary-color);
     transition: all 0.5s ease-out;
     cursor: pointer;
@@ -369,6 +375,7 @@ menu ol {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 100px;
 }
 
@@ -535,6 +542,7 @@ menu ol {
     background: #101010;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     color: var(--secondary-color);
     gap: 30px;
@@ -624,6 +632,7 @@ menu ol {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .price div {
@@ -669,3 +678,44 @@ menu ol {
     background: var(--third-color);
 }
 
+/* page_11 */
+
+.page_11 {
+    background: #101010;
+    padding: 100px 50px 50px 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.page_11 p {
+    width: 600px;
+}
+
+.blog{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+    align-items: center;justify-content: space-around;
+}
+
+.blog div{
+    width: 450px;
+    text-align: start;
+}
+
+.blog div h6{
+    font-size: 22px;
+    padding: 20px 0px 20px;
+    color: var(--secondary-color);
+    font-family: "Oxanium", serif;
+}
+
+.blog div h6:hover{
+    color: var(--third-color);
+    transition: all 0.4s;
+}
