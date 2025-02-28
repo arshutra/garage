@@ -637,16 +637,19 @@ menu ol {
 
 .price div {
     box-shadow: rgba(124, 124, 124, 0.098) 0px 8px 24px;
-    width: 400px;padding: 60px;
+    width: 400px;
+    padding: 60px;
 }
 
-.price div h6{
+.price div h6 {
     padding: 8px;
     font-weight: 300;
 }
-.price div h5{
+
+.price div h5 {
     padding: 8px;
 }
+
 .price div h3 {
     padding: 10px 5px 50px 5px;
     color: white;
@@ -655,26 +658,28 @@ menu ol {
     font-family: "Oxanium", serif;
 }
 
-.price button{
+.price button {
     font-family: "Oxanium", serif;
     font-size: 17px;
     color: var(--secondary-color);
-    background: rgba(255, 255, 255, 0.215);margin-top: 20px;
+    background: rgba(255, 255, 255, 0.215);
+    margin-top: 20px;
     padding: 20px 35px;
     border-radius: 40px;
     border: none;
 }
 
-.price div i{
-    color: rgba(255, 255, 255, 0.596);padding-right: 6px;
+.price div i {
+    color: rgba(255, 255, 255, 0.596);
+    padding-right: 6px;
 }
 
-.price button:hover i{
+.price button:hover i {
     transform: translate(15px);
     transition: all ease 0.5s;
 }
 
-.price button:hover{
+.price button:hover {
     background: var(--third-color);
 }
 
@@ -693,29 +698,69 @@ menu ol {
 }
 
 .page_11 p {
-    width: 600px;
+    width: 500px;
 }
 
-.blog{
+.blog {
     display: flex;
     flex-wrap: wrap;
     padding-top: 70px;
-    align-items: center;justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.blog div{
+.blog div {
     width: 450px;
     text-align: start;
 }
 
-.blog div h6{
+.blog div h6,
+.footer-before div h5 {
     font-size: 22px;
     padding: 20px 0px 20px;
     color: var(--secondary-color);
     font-family: "Oxanium", serif;
 }
 
-.blog div h6:hover{
+.blog div h6:hover {
     color: var(--third-color);
     transition: all 0.4s;
+}
+
+
+/* footer-before */
+
+.footer-before {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    position: relative;
+}
+
+.footer-before div h5 {
+    font-size: 30px;
+}
+
+.footer-before div input {
+    background: #000;
+    border: none;
+    border-bottom: 1px solid var(--third-color);
+    padding: 15px;
+    color: white;
+}
+
+.footer-before div input::placeholder {
+    color: gray;
+    font-size: 15px;
+}
+
+.footer-before div button {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    background: var(--third-color);
+    border: none;
 }
