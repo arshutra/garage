@@ -627,7 +627,7 @@ menu ol {
 }
 
 .price div {
-    border: 1px solid var(--secondary-color);
+    box-shadow: rgba(124, 124, 124, 0.098) 0px 8px 24px;
     width: 400px;padding: 60px;
 }
 
@@ -658,6 +658,11 @@ menu ol {
 
 .price div i{
     color: rgba(255, 255, 255, 0.596);padding-right: 6px;
+}
+
+.price button:hover i{
+    transform: translate(15px);
+    transition: all ease 0.5s;
 }
 
 .price button:hover{
