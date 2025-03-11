@@ -780,3 +780,8 @@ footer {
     align-items: center;
     justify-content: space-around;
 }
+
+.ql a p{
+    color: white;
+    text-decoration: dotted;
+}
