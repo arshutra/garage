@@ -527,7 +527,7 @@
             serviceStick.style.top = `${servicesTop + servicesHeight - serviceStick.offsetHeight}px`;
         } else {
             serviceStick.style.position = "sticky";
-            serviceStick.style.top = `${headerHeight}px`; // Keep it below the header
+            serviceStick.style.p = `${headerHeight}px`; // Keep it below the header
         }
     });
 
@@ -540,7 +540,7 @@
         const scrollPosition = window.scrollY;
 
         // Get the top position of the .services section
-        const servicesTop = servicesSection.getBoundingClientRect().top + scrollPosition;
+        const servicesTop = servicesSection.getBoundingClientRect().top + scrollPosition; 
 
         // Get the height of the .services section
         const servicesHeight = servicesSection.offsetHeight;
