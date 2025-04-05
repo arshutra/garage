@@ -775,13 +775,22 @@ menu ol {
 
 footer {
     background: #000;
+    padding: 40px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
-.ql a p{
+.ql{
+    width: 200px;
+}
+.ql a {
     color: white;
-    text-decoration: dotted; 
+    text-decoration: none;
+}
+
+.ql h6{
+    font-size: 25px;
+    font-family: "Oxanium", serif;
+
 }
