@@ -778,16 +778,23 @@ footer {
     align-items: start;
     justify-content: space-around;
 }
+<<<<<<< HEAD
 
 .ql {
     width: 200px;
 }
 
+=======
+.ql{
+    width: 200px;
+}
+>>>>>>> dc60cb4cd31e1a6b51e039ddbf839e937ea4f27d
 .ql a {
     color: white;
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 .ql p {
     padding-top: 10px;
 
@@ -871,3 +878,10 @@ footer {
         font-size: 80px;
     }
 }
+=======
+.ql h6{
+    font-size: 25px;
+    font-family: "Oxanium", serif;
+
+}
+>>>>>>> dc60cb4cd31e1a6b51e039ddbf839e937ea4f27d
