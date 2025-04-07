@@ -64,7 +64,7 @@ menu ol {
 
 .phone i,
 .info_icon i,
-.card_div div i,
+.card i,
 .vdo a i,
 .phn {
     padding: 16px;
@@ -77,7 +77,7 @@ menu ol {
 
 .info_icon i::after,
 .phone i::after,
-.card_div div i::after,
+.card i::after,
 .vdo a i::after,
 .phn::after {
     content: '';
@@ -145,7 +145,7 @@ menu ol {
 }
 
 .hero_content p,
-.card_div p,
+.card-div p,
 .choose p,
 .page_4 div p,
 .page_9 div p,
@@ -191,33 +191,24 @@ menu ol {
     flex-direction: column;
 }
 
+.card-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+
+}
+
 .number {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
-.number hr {
-    width: 300px;
-}
-
-.number p {
-    color: var(--secondary-color);
-    font-size: 30px;
-    font-family: "Bungee Outline", sans-serif;
-}
-
-.card_div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding-top: 20px;
-}
-
-.card_div div {
+.card {
     background: black;
     width: 360px;
     height: 240px;
@@ -231,7 +222,13 @@ menu ol {
 }
 
 
-.card_div h5 {
+.number p {
+    color: var(--secondary-color);
+    font-size: 30px;
+    font-family: "Bungee Outline", sans-serif;
+}
+
+.card h5 {
     font-size: 20px;
     padding: 20px;
     font-weight: 700;
@@ -262,7 +259,8 @@ menu ol {
 .page_9 div h1,
 .page_10 h1,
 .price div h5,
-.page_11 h1,footer div h1 {
+.page_11 h1,
+footer div h1 {
     color: white;
     font-size: 49px;
     font-family: "Oxanium", serif;
@@ -772,25 +770,104 @@ menu ol {
 
 /* footer */
 
-
 footer {
     background: #000;
     padding: 40px;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-around;
 }
-.ql{
+
+.ql {
     width: 200px;
 }
+
 .ql a {
     color: white;
     text-decoration: none;
 }
 
-.ql h6{
+.ql p {
+    padding-top: 10px;
+
+}
+
+.ql h6 {
     font-size: 25px;
     font-family: "Oxanium", serif;
+}
 
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Space between items */
+}
+
+.contact-info i {
+    margin-right: 10px;
+    /* Space between icon and text */
+}
+
+.contact-info p {
+    margin: 0;
+    /* Remove extra margin from <p> tag */
+}
+
+.footer-container {
+    background: #000;
+}
+
+
+.footer-after {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: whitesmoke;
+    padding: 10px 100px 10px 100px;
+}
+
+.footer-after p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.footer-after i {
+    font-size: 25px;
+    padding: 8px;
+}
+
+.up-arrow {
+    color: var(--primary-color);
+    position: fixed;
+    font-size: 30px;
+    top: 90%;
+    right: 5%;
+}
+
+
+/* media quarry */
+
+@media (max-width:1209px) {
+
+    .page_2 {
+        padding-top: 50px;
+    }
+
+    .page_3 {
+        flex-wrap: wrap;
+        justify-content: start;
+        padding: 90px;
+    }
+
+
+    .tubelight_3 {
+        top: 70px;
+    }
+
+    .tubelight {
+        font-size: 80px;
+    }
 }
