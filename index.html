@@ -465,44 +465,14 @@
 
         </div>
 
-<<<<<<< HEAD
+
         <div class="footer-after">
             <div>
                 <p>Copyright 2025, All Right reserved</p>
-=======
         <footer>
-            <div style="width: 400px;">
-                <img src="footer-logo.svg" alt="">
-                <p class="footer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's stan. Lorem Ipsum is.</p>
-                <i class="fa-solid fa-phone phn"></i><h1>(406) 555-0120</h1>
->>>>>>> dc60cb4cd31e1a6b51e039ddbf839e937ea4f27d
-            </div>
-            <div>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-instagram"></i>
-            </div>
-<<<<<<< HEAD
-        </div>
-=======
-            <div class="ql">
-                <h6>Quick Links</h6>
-                <a href="#"><p>Appointment</p></a>
-                <a href="#"><p>Blog / News</p></a>
-                <a href="#"><p>FA Question</p></a>
-                <a href="#"><p>Team</p></a>
-            </div>
-            <div class="ql" style="width: 400px;">
-                <h6>Location & contact</h6>
-                <i class="fa-solid fa-location-dot"></i><p>901 N Pitt Str., Suite 170 Alexandria, NY, USA</p>
-                <i class="fa-solid fa-envelope"></i><p>cars@gmail.com</p>
-                <i class="fa-solid fa-calendar-days"></i><p>Sun - Thu:Open 24/7</p>
-            </div>
-        </footer>
     </div>
 
     <i class="fa-solid fa-circle-up up-arrow"></i>
-
 
 </body>
 
@@ -552,6 +522,13 @@
     ];
 
 
+    // up arrow
+    document.querySelector('.up-arrow').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Smooth scrolling effect
+    });
+});
 
 
     let index = 0;
