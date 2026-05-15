@@ -854,7 +854,7 @@ footer {
 
 /* media quarry */
 
-@media (max-width:1209px) {
+ @media (max-width:1209px) {
 
     .page_2 {
         padding-top: 50px;
@@ -881,3 +881,5 @@ footer {
     font-family: "Oxanium", serif;
 
 }
+
+
